@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
+
+.title {
+    font-size: 6vw;
+    color: #ff6f61;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.subtitle {
+    font-size: 32px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+    animation: wave 5s infinite linear;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.description {
+    font-size: 22px;
+    color: #5a5a5a;
+    margin-bottom: 40px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
+    background-color: #ffd166;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.1s;
+    width: 200px; /* Ancho fijo para los botones */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 30px; /* Ajusta la altura del texto verticalmente */
+    margin: 0 10px; /* Ajusta el margen horizontal */
+}
+
+
+.btn:hover {
+    background-color: #ff6f61;
+}
+
+.btn:active {
+    transform: scale(1.8); /* Reduce la escala cuando el botón está activo */
+}
+
+.buttons .btn img {
+    width: 32px; /* Ajusta el ancho de las imágenes de las banderas */
+    margin-right: 5px; /* Añade un pequeño espacio entre la imagen y el texto */
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0; /* Ajusta el espacio interno si es necesario */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Define el tamaño deseado */
+    z-index: 1;
+}
+.footer p{
+    margin-top: 10px;
+}
+
+
+.content {
+    min-height: calc(100vh - 60px);
+    padding-top: 120px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.content-item {
+    background-color: #ffd166;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-5px);
+}
+
+.content-link {
+    display: block;
+    text-decoration: none;
+}
+
+.content-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-regresar {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0;
+    background-color: #ffd166;
+    color: #5a5a5a;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #ff6f61;
+}
+
+.headerContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.containerPrincipal {
+    text-align: center;
+    max-width: 800px; /* Ancho máximo para mantener el contenido centrado y controlado */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 0 20px; /* Agregar un poco de espacio a los lados del contenedor */
+}
+

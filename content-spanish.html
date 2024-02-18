@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido en Español - App de Aprendizaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="content" id="main-content">
+        <div class="container">
+            <header class="headerContent">
+                <h1 class="title">Contenido en Español</h1>
+                <a href="index.html" class="btn-regresar">Regresar</a>
+            </header>
+
+            <!-- Lista de tabla de contenidos -->
+            <div class="content-grid">
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/lasVocales.mp3')">
+                        <img src="images/btn_vocales.png" alt="Las Vocales">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/losNumeros.mp3')">
+                        <img src="images/btn_numeros.png" alt="Números">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/losColores.mp3')">
+                        <img src="images/btn_colores.png" alt="Colores">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/lasFigurasG.mp3')">
+                        <img src="images/btn_figurasG.png" alt="Figuras Geométricas">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/frutasYv.mp3')">
+                        <img src="images/btn_frutasV.png" alt="Frutas y Verduras">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/losAnimales.mp3')">
+                        <img src="images/btn_animales.png" alt="Animales">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/transportes.mp3')">
+                        <img src="images/btn_transportes.png" alt="Medios de Transporte">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/cuerpoH.mp3')">
+                        <img src="images/btn_cuerpoH.png" alt="El Cuerpo Humano">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/profesiones.mp3')">
+                        <img src="images/btn_profesiones.png" alt="Profesiones">
+                    </a>
+                </div>
+                <div class="content-item">
+                    <a href="#" class="content-link" onclick="playAudio('audios/spanish/actividades.mp3')">
+                        <img src="images/btn_actividades.png" alt="Actividades Diarias">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio autoplay>
+        <source src="audios/spanish/spanish.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+    <footer class="footer">
+        <p>© 2024 App de Aprendizaje para Niños</p>
+    </footer>
+</body>
+
+</html>
